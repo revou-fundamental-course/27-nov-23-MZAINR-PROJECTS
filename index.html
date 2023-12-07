@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Segitiga</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <h1 id="logo">Hitung Segitiga</h1>
+    <header id="navigation-bar">
+        <nav class="navigation">
+            <a href="#menu1" class="menu" id="menu1" onclick="toggleLuas()">Luas Segitiga</a>
+            <a href="#menu2" class="menu" id="menu2" onclick="toggleKeliling()">Keliling Segitiga</a>
+        </nav>
+    </header>
+    <form class="input-section" id="luas-section">
+        <section class="rumus">
+            <img id="luas.png" src="luas.png">
+            <div class="deskripsi">
+                <p id="judul">Rumus luas segitiga:</p>
+                <p>1/2 * alas * tinggi </p>
+                <p id="hasil-luas">Luas segitiga adalah: </p>
+            </div>
+        </section>
+
+        <label for="alas">Alas Segitiga</label>
+        <input type="number" id="alas" class="ht-input" placeholder="Masukkan angka"></input>
+
+        <label for="tinggi">Tinggi Segitiga</label>
+        <input type="number" id="tinggi" class="ht-input" placeholder="Masukkan angka"></input>
+
+        <div class="buttons">
+            <button type="button" class="button-hitung" onclick="hitungLuasSegitiga()">Hitung</button>
+            <button type="reset" onclick="reloadPage()">Reset</button>
+        </div>
+    </form>
+
+    <form class="input-section" id="keliling-section">
+        <section class="rumus">
+            <img id="luas.png" src="keliling.png">
+            <div class="deskripsi">
+                <p id="judul">Rumus keliling segitiga:</p>
+                <p>sisi[a] + sisi[b] + sisi[c] </p>
+                <p id="hasil-keliling">Keliling segitiga adalah: </p>
+            </div>
+        </section>
+
+        <label for="alas">Sisi a</label>
+        <input type="number" id="sisi-a" class="ht-input" placeholder="Masukkan angka"></input>
+
+        <label for="tinggi">Sisi b</label>
+        <input type="number" id="sisi-b" class="ht-input" placeholder="Masukkan angka"></input>
+
+        <label for="tinggi">Sisi c</label>
+        <input type="number" id="sisi-c" class="ht-input" placeholder="Masukkan angka"></input>
+
+        <div class="buttons">
+            <button type="button" class="button-hitung" onclick="hitungKelilingSegitiga()">Hitung</button>
+            <button type="reset" onclick="reloadPage()">Reset</button>
+        </div>
+    </form>
+    <script src="/js/script.js"></script>
+</body>
+</html>
